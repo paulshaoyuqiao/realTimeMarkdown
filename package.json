@@ -1,0 +1,31 @@
+{
+  "name": "real_time_markdown_visualizer",
+  "version": "1.0.0",
+  "description": "a web application that can convert markdown to html and display the results in real time",
+  "main": "server.js",
+  "scripts": {
+    "test": "karma"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulshaoyuqiao/realTimeMarkdown.git"
+  },
+  "keywords": [
+    "markdown",
+    "realtime",
+    "html",
+    "conversion"
+  ],
+  "author": "Paul Shao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulshaoyuqiao/realTimeMarkdown/issues"
+  },
+  "homepage": "https://github.com/paulshaoyuqiao/realTimeMarkdown#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "share": "^0.7.40",
+    "showdown": "^1.8.6"
+  }
+}
