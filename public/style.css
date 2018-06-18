@@ -3,6 +3,7 @@ html, body, section, .full-height {
 }
 .container-fluid{
   width: 100%;
+  padding: 0;
 }
 section{
   padding-top: 5px;
