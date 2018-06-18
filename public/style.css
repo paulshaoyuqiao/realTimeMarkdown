@@ -1,6 +1,9 @@
 html, body, section, .full-height {
   height: 100%;
+}
+.container-fluid{
   width: 100%;
+  white-space: nowrap;
 }
 section{
   padding-top: 5px;
