@@ -12,8 +12,37 @@
       <a href="#">Real Time Markdown Editor</a>
       <form class="form-inline">
         <button type="button" class="btn btn-outline-primary" id="share">Share</button>
-        <button type="button" class="btn btn-outline-sucess" id="highlight">Highlight Mode</button>
-        <button type="button" class="btn btn-outline-info" id="help">Help</button>
+        <button type="button" class="btn btn-outline-success" id="highlight">Highlight Mode</button>
+        <button type="button" class="btn btn-outline-info" id="help"
+        data-toggle="modal" data-target="#infoModal">
+          Help
+        </button>
+        <!-- Information Modal -->
+          <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="infoModalLabel">User Guidelines</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  To use this application, simply type in markdown language on the
+                  left side of the application. The application will then automatically
+                  convert your codes to html and display the result on the right.
+
+                  For items in the navigation bar, "Share" allows you to instantly copy
+                  the link to your markdown document so you can share it with your friends;
+                  "Highlight Mode" allows you to switch to dark mode with syntax highlighting
+                  support that makes your editing even easier.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
       </form>
     </nav>
     <body class="container-fluid">
