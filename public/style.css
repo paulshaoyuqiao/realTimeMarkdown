@@ -3,12 +3,11 @@ html, body, section, .full-height {
 }
 .container-fluid{
   width: 100%;
-  white-space: nowrap;
 }
 section{
   padding-top: 5px;
 }
-#nav {
+nav {
   margin-bottom: 5px;
   width: 100%;
 }
