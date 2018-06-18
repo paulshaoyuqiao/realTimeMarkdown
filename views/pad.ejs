@@ -8,17 +8,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   </head>
+    <nav class="navbar navbar-light bg-light">
+      <a href="#">Real Time Markdown Editor</a>
+      <form class="form-inline">
+        <button type="button" class="btn btn-outline-primary" id="share">Share</button>
+        <button type="button" class="btn btn-outline-sucess" id="highlight">Highlight Mode</button>
+        <button type="button" class="btn btn-outline-info" id="help">Help</button>
+      </form>
+    </nav>
     <body class="container-fluid">
-      <nav class="navbar navbar-light bg-primary">
-        <!-- Navbar content -->
-        <a class="navbar-brand" href="#">RTMarkdown</a>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <form class="form-inline">
-          <button type="button" class="btn btn-primary" id="share">Share</button>
-          <button type="button" class="btn btn-sucess" id="highlight">Highlight Mode</button>
-          <button type="button" class="btn btn-info" id="help">Help</button>
-        </form>
-      </nav>
       <section class="row">
         <textarea class="col-md-6 full-height" id="pad">Write your text here...</textarea>
         <div class="col-md-6 full-height" id="markdown"></div>
