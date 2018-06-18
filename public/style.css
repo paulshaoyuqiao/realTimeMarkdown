@@ -3,12 +3,10 @@ html, body, section, .full-height {
 }
 
 #nav {
-  list-style: none;
-  font-weight: bold;
   margin-bottom: 5px;
   width: 100%;
-  text-align: center;
 }
+
 #pad{
   font-family: Menlno, Monaco, Consolas, "Courier New", monospace;
 

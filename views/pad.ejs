@@ -8,44 +8,44 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   </head>
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-      <a href="#">Real Time Markdown Editor</a>
-      <form class="form-inline">
-        <button type="button" class="btn btn-outline-primary" id="share">Share</button>
-        <button type="button" class="btn btn-outline-success" id="highlight">Highlight Mode</button>
-        <button type="button" class="btn btn-outline-info" id="help"
-        data-toggle="modal" data-target="#infoModal">
-          Help
-        </button>
-        <!-- Information Modal -->
-          <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="infoModalLabel">User Guidelines</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <p>To use this application, simply type in markdown language on the
-                  left side of the application. The application will then automatically
-                  convert your codes to html and display the result on the right.</p>
-                  <br>
-                  <p>For items in the navigation bar, "Share" allows you to instantly copy
-                  the link to your markdown document so you can share it with your friends;
-                  "Highlight Mode" allows you to switch to dark mode with syntax highlighting
-                  support that makes your editing even easier.</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    <body class="container-fluid">
+      <nav class="navbar navbar-light bg-light">
+        <a href="#">Real Time Markdown Editor</a>
+        <form class="form-inline">
+          <button type="button" class="btn btn-outline-primary" id="share">Share</button>
+          <button type="button" class="btn btn-outline-success" id="highlight">Highlight Mode</button>
+          <button type="button" class="btn btn-outline-info" id="help"
+          data-toggle="modal" data-target="#infoModal">
+            Help
+          </button>
+          <!-- Information Modal -->
+            <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="infoModalLabel">User Guidelines</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>To use this application, simply type in markdown language on the
+                    left side of the application. The application will then automatically
+                    convert your codes to html and display the result on the right.</p>
+                    <br>
+                    <p>For items in the navigation bar, "Share" allows you to instantly copy
+                    the link to your markdown document so you can share it with your friends;
+                    "Highlight Mode" allows you to switch to dark mode with syntax highlighting
+                    support that makes your editing even easier.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-      </form>
-    </nav>
-    <body class="container-fluid">
+        </form>
+      </nav>
       <section class="row">
         <textarea class="col-md-6 full-height" id="pad">Write your text here...</textarea>
         <div class="col-md-6 full-height" id="markdown"></div>
