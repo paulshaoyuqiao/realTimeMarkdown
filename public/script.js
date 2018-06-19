@@ -1,4 +1,17 @@
 
+//handle the share functionality
+var share_button = document.querySelector('#share');
+share_button.addEventListener('click',function(){
+  var placeholder = document.createElement('input');
+  var link = window.location.href;
+  document.body.appendChild(placeholder);
+  placeholder.value = link;
+  placeholder.select();
+  document.execCommand('copy');
+  document.body.removeChild(placeholder);
+  $('#success_alert').slideDown(400).delay(3000).slideUp(400);
+});
+
 
 window.onload = function() {
   var converter = new showdown.Converter();
