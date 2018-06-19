@@ -5,7 +5,7 @@ html, body, section, .full-height {
 
 #success_alert{
   margin: 0px;
-  visibility: hidden;
+  visibility: collapse;
 }
 
 .container-fluid{
