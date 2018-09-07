@@ -5,13 +5,13 @@ This web application allows users to edit in markdown language simultaneously an
 There are the technologies used in this application:
 
 ### Front End:
-* *Bootstrap 4* (_Updated_)(formatting and splitting the screen in half)
+* **Bootstrap 4** (_Updated_)(formatting and splitting the screen in half)
 
 ### Back End:
-* *showndown* (converting markdown to viewable html)
-* *node.js* (backend server framework)
-* *RedisToGo* (storing all markdown documents)
-* *share.js* (supporting real-time editing of the same document)
+* **showndown** (converting markdown to viewable html)
+* **express.js** (backend server framework)
+* **RedisToGo** (storing all markdown documents)
+* **share.js** (supporting real-time editing of the same document)
 
 Here is the link to the app (now deployed on Heroku):
 https://paulshao-rtmarkdown.herokuapp.com/
